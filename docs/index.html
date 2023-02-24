@@ -1,5 +1,6 @@
 <html>
 <head>
+
 <style>
 .textadblock {
 font-family: Arial,sans-serif;
@@ -37,16 +38,55 @@ padding: 20px 0px 20px 0px;
 font-size: 8px;
 }
 </style>
-<script async="async" src="https://www.google.com/adsense/search/ads.js"></script>
-
-<script type="text/javascript" charset="utf-8">
-  (function(g,o){g[o]=g[o]||function(){(g[o]['q']=g[o]['q']||[]).push(
-  arguments)},g[o]['t']=1*new Date})(window,'_googCsa');
-</script>
-
 </head>
 
 <body>
+
+<div class="gam-responsive-ad-container">
+<script async="async" src="https://securepubads.g.doubleclick.net/tag/js/gpt.js"></script>
+<script> var googletag = googletag || {}; googletag.cmd = googletag.cmd || [];</script>
+<div id="gpt-ad-987654321-0">
+  <script>
+    googletag.cmd.push(function() {
+      googletag.defineSlot( '/123456789/Medium_Rectangle', [300,250], 'gpt-ad-987654321-0' )
+        .addService(googletag.pubads()).setCollapseEmptyDiv(true);
+		googletag.enableServices();
+		googletag.display( 'gpt-ad-987654321-0' );
+    });
+  </script>
+</div>
+</div>
+<script>
+setTimeout(function(){ 
+// get the ad container ID
+var ad_container = document.querySelector('.gam-responsive-ad-container');
+if( 0 == ad_container.offsetHeight ) {
+// show fallback ad code
+ad_container.innerHTML = '<img src="https://wpadvancedads.com/wp-content/uploads/2015/08/300x250.png" width="300" height="250" alt="icon"/>';
+}
+// check the height
+ }, 2000);
+</script>
+<div id="server-01-box"></div>
+<script>
+fetch('//example.com/wp-admin/admin-ajax.php?action=aa-server-select&p=server-01')
+  .then(function(response) {
+    return response.text();
+  })
+  .then(function(body) {
+
+var server_parser = new DOMParser();
+var doc = server_parser.parseFromString( body, "text/html" );
+var ad_container = doc.querySelector( 'div' );
+
+    document.querySelector('#server-01-box').innerHTML = ad_container.innerHTML;
+  });
+</script>
+<div class="textadblock">
+<a href="https://www.youraffiliatepartnerlink.com" class="textadlink1" target="_blank" rel="noopener noreferrer">The heading line linking to your affiliate partner</a>
+<a href="http://www.youraffiliatepartnerlink.com" class="textadlink2" target="_blank" rel="noopener noreferrer">www.youraffiliatepartnerlink.com</a>
+<span class="textstyle">A descriptive text about your partnerlink usually filling one or two lines</span>
+</div>
 
 <div class="textadblock">
 <a href="https://www.youraffiliatepartnerlink.com" class="textadlink1" target="_blank" rel="noopener noreferrer">The heading line linking to your affiliate partner</a>
@@ -55,31 +95,21 @@ font-size: 8px;
 </div>
 
 <div id="afscontainer1"></div>
-<script type="text/javascript" charset="utf-8">
-
-var pageOptions = {
-  'pubId' : 'test client ID', // Enter your own client-ID here
-  'query' : 'flowers', // User query for this page
-  'styleId': '7824176615' // Enter your own style ID here
-};
-
-var adblock1 = {
-  'container' : 'afscontainer1',
-  'width' : 700
-};
-
-var adblock2 = {
-  'container' : 'afscontainer2',
-  'width' : 700
-};
-
-_googCsa('ads', pageOptions, adblock1, adblock2);
-</script>
-
-<p>Search result 1</p>
-<p>Search result 2</p>
-<p>Search result 3</p>
 
 <div id="afscontainer2"></div>
+
+<div class="textadblock">
+<a href="https://www.youraffiliatepartnerlink.com" class="textadlink1" target="_blank" rel="noopener noreferrer">The heading line linking to your affiliate partner</a>
+<a href="http://www.youraffiliatepartnerlink.com" class="textadlink2" target="_blank" rel="noopener noreferrer">www.youraffiliatepartnerlink.com</a>
+<span class="textstyle">A descriptive text about your partnerlink usually filling one or two lines</span>
+</div>
+
+<div class="textadblock">
+<a href="https://www.youraffiliatepartnerlink.com" class="textadlink1" target="_blank" rel="noopener noreferrer">The heading line linking to your affiliate partner</a>
+<a href="http://www.youraffiliatepartnerlink.com" class="textadlink2" target="_blank" rel="noopener noreferrer">www.youraffiliatepartnerlink.com</a>
+<span class="textstyle">A descriptive text about your partnerlink usually filling one or two lines</span>
+</div>
+
 </body>
+
 </html>
