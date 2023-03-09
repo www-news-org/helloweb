@@ -2,10 +2,7 @@
 <head>
 
 <script async="async" src="https://securepubads.g.doubleclick.net/tag/js/gpt.js"></script>
-<script> 
-var googletag = googletag || {}; googletag.cmd = googletag.cmd || [];
-
-</script>
+<script> var googletag = googletag || {}; googletag.cmd = googletag.cmd || [];</script>
 
 <style>
 .textadblock {
@@ -44,10 +41,12 @@ padding: 20px 0px 20px 0px;
 font-size: 8px;
 }
 </style>
+
 </head>
 
 <body>
-<div class="gam-responsive-ad-container">
+
+<div class="ad-container">
 
 
 </div>
@@ -81,30 +80,8 @@ font-size: 8px;
 </div>
 
 <div id="server-01-box"></div>
-<script>
-setTimeout(function(){ 
-// get the ad container ID
-var ad_container = document.querySelector('.gam-responsive-ad-container');
-if( 0 == ad_container.offsetHeight ) {
-// show fallback ad code
-ad_container.innerHTML = '<img src="https://amp.dev/static/samples/img/ad-coffee.jpg" width="300" height="250" alt="icon"/>';
-}
-// check the height
- }, 2000);
 
-fetch('//adball.tech/wp-admin/admin-ajax.php?action=aa-server-select&p=server-01')
-  .then(function(response) {
-    return response.text();
-  })
-  .then(function(body) {
 
-var server_parser = new DOMParser();
-var doc = server_parser.parseFromString( body, "text/html" );
-var ad_container = doc.querySelector( 'div' );
-
-    document.querySelector('#server-01-box').innerHTML = ad_container.innerHTML;
-  });
-</script>
 </body>
 
 </html>
