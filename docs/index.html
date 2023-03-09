@@ -1,6 +1,12 @@
 <html>
 <head>
 
+<script async="async" src="https://securepubads.g.doubleclick.net/tag/js/gpt.js"></script>
+<script> 
+var googletag = googletag || {}; googletag.cmd = googletag.cmd || [];
+
+</script>
+
 <style>
 .textadblock {
 font-family: Arial,sans-serif;
@@ -41,42 +47,12 @@ font-size: 8px;
 </head>
 
 <body>
-
 <div class="gam-responsive-ad-container">
 
-<script async="async" src="https://securepubads.g.doubleclick.net/tag/js/gpt.js"></script>
-<script> var googletag = googletag || {}; googletag.cmd = googletag.cmd || [];</script>
 
 </div>
 
-<script>
-setTimeout(function(){ 
-// get the ad container ID
-var ad_container = document.querySelector('.gam-responsive-ad-container');
-if( 0 == ad_container.offsetHeight ) {
-// show fallback ad code
-ad_container.innerHTML = '<img src="https://amp.dev/static/samples/img/ad-coffee.jpg" width="300" height="250" alt="icon"/>';
-}
-// check the height
- }, 2000);
-</script>
 
-<div id="server-01-box"></div>
-
-<script>
-fetch('//adball.tech/wp-admin/admin-ajax.php?action=aa-server-select&p=server-01')
-  .then(function(response) {
-    return response.text();
-  })
-  .then(function(body) {
-
-var server_parser = new DOMParser();
-var doc = server_parser.parseFromString( body, "text/html" );
-var ad_container = doc.querySelector( 'div' );
-
-    document.querySelector('#server-01-box').innerHTML = ad_container.innerHTML;
-  });
-</script>
 
 <div class="textadblock">
 <a href="https://www.adball.tech" class="textadlink1" target="_blank" rel="noopener noreferrer">The Bestline linking to your affiliate partner</a>
@@ -104,6 +80,31 @@ var ad_container = doc.querySelector( 'div' );
 <span class="textstyle">A descriptive text about your partnerlink usually filling one or two lines</span>
 </div>
 
+<div id="server-01-box"></div>
+<script>
+setTimeout(function(){ 
+// get the ad container ID
+var ad_container = document.querySelector('.gam-responsive-ad-container');
+if( 0 == ad_container.offsetHeight ) {
+// show fallback ad code
+ad_container.innerHTML = '<img src="https://amp.dev/static/samples/img/ad-coffee.jpg" width="300" height="250" alt="icon"/>';
+}
+// check the height
+ }, 2000);
+
+fetch('//adball.tech/wp-admin/admin-ajax.php?action=aa-server-select&p=server-01')
+  .then(function(response) {
+    return response.text();
+  })
+  .then(function(body) {
+
+var server_parser = new DOMParser();
+var doc = server_parser.parseFromString( body, "text/html" );
+var ad_container = doc.querySelector( 'div' );
+
+    document.querySelector('#server-01-box').innerHTML = ad_container.innerHTML;
+  });
+</script>
 </body>
 
 </html>
